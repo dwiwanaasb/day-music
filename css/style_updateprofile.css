@@ -1,0 +1,150 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+body {
+    background-color: #e8ebf0;
+}
+
+.container-header {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container-header::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.container-header {
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    box-sizing: border-box;
+    padding: 5px 80px;
+    background-color: #357376;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.container-header h2 {
+    float: left;
+    padding-top: 20px;
+    margin-left: 50%;
+    color: #ffffff;
+}
+
+.container-header ul {
+    float: right;
+}
+
+.container-header ul li {
+    display: inline-block;
+}
+
+.container-header ul li a {
+    padding: 25px;
+    display: inline-block;
+    color: #ffffff;
+}
+
+.container {
+    width: 500px;
+    height: 600px;
+    background-color: #ffffff;
+    top: 70%;
+    left: 50%;
+    margin-bottom: 30px;
+    position: absolute;
+    padding: 50px;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.container .header {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 40px;
+    color: #000000;
+}
+
+.container .form {
+    width: 100%;
+}
+
+.content-form .form .input_container {
+    margin-top: 35px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.content-form .form .input_container label {
+    width: 230px;
+    margin-right: 10px;
+    margin-left: 5px;
+    font-size: 14px;
+    color: #000000;
+}
+
+.container .form .input_container .input,
+.container .form .input_container .textarea,
+.container .form .input_container .custom_select {
+    width: 60%;
+    outline: none;
+    border: 1px solid #b0cac7;
+    font-size: 15px;
+    padding: 3px 7px;
+    border-radius: 3px;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.form input {
+    color: #000000;
+}
+
+.container .form .input_container .textarea {
+    resize: none;
+    height: 90px;
+    color: #000000;
+}
+
+.container .form .input_container .custom_select {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: none;
+    margin-left: 100px;
+}
+
+.custom_select input {
+    margin-left: 15px;
+    margin-right: 10px;
+}
+
+.content-form .form button {
+    margin-top: 35px;
+    margin-left: 15px;
+    width: 93%;
+    background: #357376;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+.form button:hover {
+    box-shadow: 0px 1px 10px #357376;
+}

@@ -1,0 +1,385 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #161616;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+#main {
+    padding: 30px 50px;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    background-size: 1330px;
+    background-position: right bottom;
+    background-image: url("../img/background.png");
+    background-color: #edf1fd;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-family: calibri;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 50px;
+    background-color: #F4F7FF;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.05);
+    z-index: 1;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li a {
+    padding: 10px 15px;
+    color: #6c707c;
+    font-size: 12px;
+}
+
+.judul {
+    font-size: 25px;
+    font-weight: bold;
+    color: #000000;
+    font-family: Poppins;
+}
+
+.active a,
+.menu li a:hover {
+    background-color: #000000;
+    color: #ffffff;
+    font-weight: bold;
+    transition: all ease 0.3s;
+}
+
+.name {
+    font-family: calibri;
+    width: 500px;
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    transform: translate(-20%, -50%);
+}
+
+.name h2 {
+    font-size: 30px;
+    padding-bottom: 5px;
+}
+
+.name p:nth-child(1),
+.name .details {
+    color: #6c707c;
+    font-size: 16px;
+}
+
+.name h1 {
+    font-family: Poppins;
+    font-size: 40px;
+    margin: 0px;
+    letter-spacing: 3px;
+    color: #000000;
+}
+
+.about-me {
+    width: 200px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    color: #FFFFFF;
+    margin-top: 30px
+}
+
+.about-me:hover {
+    background-color: #131313;
+    transition: all ease 0.5s;
+}
+
+.social {
+    position: absolute;
+    left: 50px;
+    bottom: 50px;
+    display: flex;
+}
+
+.social a {
+    margin: 6px 12px;
+
+}
+
+.social i {
+    color: rgba(129, 178, 20, 0.6);
+    font-size: 20px;
+}
+
+.social a:hover i {
+    color: #17d1ac;
+    transition: all ease 0.5s;
+}
+
+#about {
+    width: 100%;
+    height: 100vh;
+    background-color: #161616;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 5% 0px 5%;
+    position: relative;
+}
+
+.about-text {
+    font-family: calibri;
+    width: 50%;
+}
+
+.about-text h1 {
+    font-size: 50px;
+    color: #8CC53E;
+}
+
+.about-text h2 {
+    font-size: 30px;
+    color: #FFFFFF;
+    font-weight: 400;
+}
+
+.about-text h1,
+h2 {
+    margin: 0px;
+    padding: 0px;
+}
+
+.about-text p {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.90);
+    text-align: justify;
+}
+
+.about-text button {
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-color: #17d1ac;
+}
+
+.about-text button:hover {
+    background-color: #FFFFFF;
+    transition: all ease 0.3s;
+}
+
+.about-model img {
+    height: 400px;
+    margin-right: 50px;
+}
+
+.map {
+    padding-bottom: 10px;
+}
+
+.map p {
+    color: #FFFFFF;
+    word-spacing: 2px;
+    line-height: 25px;
+    text-align: center;
+}
+
+#address {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    font-family: calibri;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.map-model img {
+    height: 70px;
+    margin-top: 10px;
+}
+
+.map-text h1 {
+    color: #8CC53E;
+    font-size: 50px;
+    text-align: center;
+}
+
+.map-text ul li {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.90);
+    list-style: circle;
+    padding: 4px;
+}
+
+iframe {
+    width: 100%;
+    height: 400px;
+    border: #FFFFFF;
+    border-radius: 5px;
+}
+
+#footer-content {
+    padding: 30px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F4F7FF;
+}
+
+footer {
+    text-align: center;
+    color: #6c707c;
+    letter-spacing: 2px;
+}
+
+@media(max-width:1100px) {
+    #main {
+        background-size: 1260px;
+    }
+
+    .about-model img {
+        height: 300px;
+    }
+
+    #address {
+        height: auto;
+    }
+}
+
+@media(max-width:970px) {
+    #main {
+        background-image: none;
+    }
+
+    .name {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .about-model {
+        display: none;
+    }
+
+    #about {
+        justify-content: center;
+        padding-top: 0px;
+    }
+
+    .about-text {
+        width: 90%;
+    }
+
+    .about-text h1 {
+        font-size: 36px;
+    }
+
+    .skills-container {
+        width: 100%;
+    }
+
+    .map-text h1 {
+        text-align: center;
+        font-size: 36px;
+    }
+}
+
+@media(max-width:900px) {
+    .judul {
+        padding: 10px;
+    }
+
+    nav ul li a {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+        color: #ffffff;
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .active-menu {
+        display: block !important;
+    }
+
+    nav ul li a:hover {
+        background-color: rgba(27, 29, 32, 0.15);
+
+    }
+
+    .menu li a {
+        font-size: 12px;
+    }
+
+    nav ul li a:hover {
+        background-color: rgba(27, 29, 32, 0.15);
+    }
+
+    #footer-content {
+        padding: 20px;
+        height: auto;
+        box-sizing: border-box;
+    }
+
+    footer small {
+        font-size: 12px;
+    }
+}
+
+@media(max-width:600px) {
+    .judul {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .name {
+        width: 60%;
+    }
+
+    .social {
+        left: 30px;
+    }
+}
+
+@media only screen and (max-width:400px) {
+    .name {
+        left: 43%;
+    }
+
+    .about-text h1 {
+        font-size: 35px;
+    }
+
+    .about-text h2 {
+        font-size: 25px;
+    }
+
+    .about-text p {
+        font-size: 16px;
+    }
+}

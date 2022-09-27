@@ -1,0 +1,126 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  background-color: #e8ebf0;
+}
+
+.container-header {
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+  box-sizing: border-box;
+  padding: 5px 80px;
+  background-color: #357376;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.container-header h2 {
+  float: left;
+  padding-top: 20px;
+  margin-left: 50%;
+  color: #ffffff;
+}
+
+.container-header ul {
+  float: right;
+}
+
+.container-header ul li {
+  display: inline-block;
+}
+
+.container-header ul li a {
+  padding: 25px;
+  display: inline-block;
+  color: #ffffff;
+}
+
+.container {
+  width: 500px;
+  height: 400px;
+  background-color: #ffffff;
+  top: 55%;
+  left: 50%;
+  position: absolute;
+  padding: 50px;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.content-form .form .input_container {
+  margin-top: 35px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.content-form .form .input_container label {
+  width: 230px;
+  margin-right: 28px;
+  margin-left: 22px;
+  font-size: 14px;
+  color: #000000;
+}
+
+.content-form .form .input_container .jumlah_kembalian,
+.content-form .form .input_container .nominal_pembayaran,
+.content-form .form .input_container .total_harga {
+  border: 1px solid #b0cac7;
+  font-size: 14px;
+  padding: 3px 6px;
+  border-radius: 3px;
+  background: #ffffff;
+  width: 106px;
+}
+
+.content-form .form .input_container .harga label {
+  font-size: 14px;
+  margin-right: 20px;
+  margin-left: 2px;
+  color: #000000;
+}
+
+.content-form .form .input_container .jumlah_kembalian:focus,
+.content-form .form .input_container .nominal_pembayaran:focus,
+.content-form .form .input_container .total_harga:focus {
+  outline: none;
+  border: 1px solid #357376;
+}
+
+.content-form .form .input_container .custom_select select {
+  font-size: 14px;
+  background: #357376;
+  color: #ffffff;
+  padding: 3px;
+  padding-right: 10px;
+  margin-right: 31px;
+  border-radius: 5px;
+}
+
+.content-form .form button {
+  margin-top: 35px;
+  margin-left: 10px;
+  width: 93%;
+  background: #357376;
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #ffffff;
+}
+
+.form button:hover {
+  box-shadow: 0px 1px 10px #357376;
+}
